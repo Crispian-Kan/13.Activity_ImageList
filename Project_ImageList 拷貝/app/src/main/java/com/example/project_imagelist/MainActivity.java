@@ -10,21 +10,22 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int[] imgId = {R.mipmap.img1, R.mipmap.img2, R.mipmap.img3,
-            R.mipmap.img4, R.mipmap.img5, R.mipmap.img6,
-            R.mipmap.img7, R.mipmap.img8, R.mipmap.img9, R.mipmap.img_10};
+    private int[] imgId = {R.drawable.img_1, R.drawable.img_2, R.drawable.img_3,
+            R.drawable.img_4, R.drawable.img_5, R.drawable.img_6,
+            R.drawable.img_7, R.drawable.img_8, R.drawable.img_9, R.drawable.img_10,
+            R.drawable.img_11,R.drawable.img_12};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button)findViewById(R.id.img_set);
+        Button button = (Button)findViewById(R.id.btn_ImgView);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText number = (EditText)findViewById(R.id.edit1);
-                ImageView img = (ImageView)findViewById(R.id.this_img);
+                EditText number = (EditText)findViewById(R.id.value);
+                ImageView img = (ImageView)findViewById(R.id.display);
                 int num = Integer.parseInt(number.getText().toString());
 
                 if (num == 1){
@@ -56,6 +57,12 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (num == 10){
                     img.setImageResource(imgId[9]);
+                }
+                else if (num == 11) {
+                    img.setImageResource(imgId[10]);
+                }
+                else if (num == 12) {
+                    img.setImageResource(imgId[11]);
                 }
             }
         });

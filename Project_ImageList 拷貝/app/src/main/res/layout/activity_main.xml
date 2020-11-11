@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#DBEAF1"
+        android:background="#CDE4B2"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,9 +21,9 @@
         android:layout_marginStart="175dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="175dp"
-        android:text="@string/Hw13_title"
+        android:text="@string/title"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,29 +35,29 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="105dp"
         android:layout_marginEnd="10dp"
-        android:text="@string/Hw13_input_num"
+        android:text="@string/input_num"
         android:textColor="#293887"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/edit1"
+        app:layout_constraintEnd_toStartOf="@+id/value"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/img_set"
+        android:id="@+id/btn_ImgView"
         style="@android:style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="95dp"
-        android:text="@string/Hw13_img_set"
+        android:text="@string/img_view"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/edit1"
+        app:layout_constraintStart_toEndOf="@+id/value"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit1"
+        android:id="@+id/value"
         android:layout_width="100sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
@@ -73,13 +73,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/this_img"
+        android:id="@+id/display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/img_0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
