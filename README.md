@@ -1,2 +1,2 @@
-# Activity_ImageList
- This is to save several pictures in the list and then take them out and display the pictures.
+# 13.Activity_ImageList
+ This is a app to save several pictures in the list . When user take a number,app will display the picture.
